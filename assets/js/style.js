@@ -14,6 +14,7 @@ $(function () {
 $(document).ready(function(){
     $("#input_text").keyup(function(){
         var Value = $(this).val();
+        console.log(Value)
         $("#search_product").empty();
         // $("#search_product").append(Value);
         $.ajax({
@@ -24,6 +25,24 @@ $(document).ready(function(){
                 $("#search_product").empty();
                 $("#search_product").append(text);
             }
+        });
+    })
+})
+$(document).ready(function(){
+    $("#input_text_").keyup(function(){
+        var Value = $(this).val();
+        console.log(Value)
+        $.ajax({
+            type: "POST",
+            url: "include/products.php",
+            data: {Input:Value},
+            success: function(text){
+
+                $("#search-item").empty();
+                $("#search-item").append(text);
+
+            },
+            
         });
     })
 })

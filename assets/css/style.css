@@ -107,3 +107,61 @@ a:active{
     width: 50px;
     text-align: center;
 }
+.ass2{
+    right: 30px;
+    top: 25px;
+}
+.loading{
+    width: 100%;
+}
+.price{
+    float: right;
+}
+.product11{
+    height: 250px;
+}
+.desc{
+    position: relative;
+}
+.card11{
+    position: absolute;
+    bottom: 20px;
+    width: 213.5px;
+    height: 30px;
+    line-height: 15px;
+    right: 20px;
+}
+.product22{
+    background-color: darkgrey;
+    color: black;
+    border: 1px solid darkgray;
+    height: 50px;
+    width: 300x;
+    border-radius: 5px;
+}
+.select_product{
+    border: 1px solid lightgray;
+    height: 50px;
+    width: 50px;
+}
+.product33{
+    text-align: center;
+}
+.select{
+    background-color: darkgray;
+    border-radius: 5px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    display:inline-block;
+}
+.product44{
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+}
+.comment{
+    border: 1px solid lightgray;
+}

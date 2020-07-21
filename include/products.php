@@ -1,12 +1,12 @@
 <?php
-// $servername = "localhost";
-  // $username = "root";
-  // $password = "";
-  // $dbname = "shop";
-  $servername = "db4free.net";
-  $username = "hongly123";
-  $password = "hongly123";
-  $dbname = "hongly_shop";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "shop";
+  // $servername = "db4free.net";
+  // $username = "hongly123";
+  // $password = "hongly123";
+  // $dbname = "hongly_shop";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,6 +15,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
 
     // Product
   $sql_product = "select * from products natural join assets";
@@ -46,7 +47,8 @@ if ($conn->connect_error) {
            while($row3 = $product->fetch_assoc()) { ?>
   
               <div class="col-md-4 each_product" >
-                  <button class="btn btn-light btn_pro"type="submit" name="id" value="<?php echo $row3["id"]; ?>">
+                <form action="/IPassignment2/product_detail.php" method="POST">
+                  <button class="btn btn-light btn_pro"type="submit" name="id" value="<?php echo $id = $row3["id"]; ?>">
                     <div class="card"> 
                       <img class="card-img-top product" src="<?php echo $row3["resource_path"]; ?>" alt="...">
                       <span class="discount"><?php echo $discount = $row3["discount"]; ?>%</span>
@@ -59,6 +61,7 @@ if ($conn->connect_error) {
                       </div>
                     </div>
                   </button>
+                </form>
               </div>
 
            <?php }?>
