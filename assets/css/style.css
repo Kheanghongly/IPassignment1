@@ -1,0 +1,109 @@
+.space{
+    height: 100px;
+}
+.spacing{
+    height: 30px;
+}
+.feature{
+    position: relative;
+}
+
+.search_box{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+}
+.name_feature{
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+}
+.dercription_feature{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        opacity: 0.5;
+}
+.searching{
+    width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 30px;
+}
+::placeholder{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+  }
+a:active{
+    text-decoration: none;
+  }
+.promotion{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    margin-top: 60px;
+}
+.B_promotion{
+    position: absolute;
+    left: 16px;
+    bottom: 30px;
+}
+.text_promotion{
+    position: relative;
+    margin-top: 15px;
+    color: white;
+}
+.each_product{
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn_pro{
+    width: 100%;
+    padding: 5px;
+}
+#cate{
+    height: 30px;
+}
+.CategoryUl{
+    list-style-type: none;
+}
+.categoryButton{
+    background-color: white;
+    border: 1 solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+.CategoryIcon{
+    height: 50px;
+    width: 50px;
+}
+.product{
+    height: 250px;
+}
+.discount{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
